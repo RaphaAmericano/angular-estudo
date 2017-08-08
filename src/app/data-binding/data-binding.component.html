@@ -1,65 +1,7 @@
+<h1>{{ url }}</h1>
 <section class="property-binding">
-<!-- 	<article>
-		<h3></h3>
-		<p>Interpolação da string: {{ url }}</p>
-		<p>Rsultado de 1 + 1: {{ 1 + 1 }}</p>
-		<p>Resultado de 1 + 1 não é {{ 1 + 1 + getValor() }}</p>
-		<p>Curso angular e gosto do curso {{ cursoAngular && getCurtirCurso}}</p>
-	</article> -->
-	<!-- <article>
-		<h3>Property Binding</h3>
-		<img src="{{ urlImage }}">
-		<img [src]="urlImage">
-		<img bind-src="urlImage">
-	</article>
-	<article>
-		<h3>Class e Style Binding </h3>
-		<div>
-			Selecione uma classe:
-			<select #classe (change)="0">
-				<option value="alert-success">Sucesso</option>
-				<option value="alert-info">Info</option>
-				<option value="alert-warning">Warning</option>
-				<option value="alert-danger">Danger</option>
-			</select>
-			<div class="alert {{ classe.value }}" role="alert">
-				Texto colorido conforme valor do combobox
-			</div>
-
-			<br><br>
-			<div class="alert" role="alert" [class.alert-success]="classe.value == 'alert-success'" >Sucesso</div>
-			<div class="alert" role="alert" [class.alert-info]="classe.value == 'alert-info'" >Info</div>
-			<div class="alert" role="alert" [class.alert-warning]="classe.value == 'alert-warning'" >Alerta</div>
-			<div class="alert" role="alert" [class.alert-danger]="classe.value == 'alert-danger'" >Erro</div>
-
-			<div class="alert alert-danger" role="alert" [style.display]="classe.value == 'alert-danger' ? 'block' : 'none' ">
-				Texto somente aparece em caso de erro
-			</div>
-		</div>
-	</article> -->
-	<article>
-		<h3>Event binding
-			<div>
-				<button 
-					(click)="botaoClicado()" class="btn btn-primary">Click Aqui</button> 
-					<!-- outra maneira => on-click="botaoClicado()" -->
-				<br><br>
-				<input type="text" 
-					(keyup)="onKeyUp($event)" 
-					(keyup.enter)="salvarValor($event.target.value)" 
-					(blur)="salvarValor(campoInput.value)"	#campoInput > 
-					<!-- Duas Formas - com variavel e com $ --> 
-					<br><br>
-					<span
-					(mouseover)="onMouseOverOut()"
-					(mouseout)="onMouseOverOut()"
-					[class.highlight]="isMouseOver">
-						Passe o mouse sobre mim
-					</span>
-
-				<p>Valor atual: {{ valorAtual }}</p>
-				<p>Valor salvo: {{ valorSalvo }}</p>
-			</div>
-		</h3>
-	</article>
+	<app-interpolacao-um></app-interpolacao-um>
+	<app-property-binding-exemple></app-property-binding-exemple>
+	<app-class-style-binding></app-class-style-binding>
+	<app-event-binding></app-event-binding>
 </section>

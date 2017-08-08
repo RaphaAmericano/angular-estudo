@@ -1,4 +1,12 @@
-# AngularEstudo
+# Angular Estudo
+
+Repositório para estudar Angular 4
+
+Estudos baseados no [curso](https://github.com/loiane/curso-angular2) da [Loiane Groner](https://github.com/loiane)
+
+Projeto gerado com o [Angular CLI](https://github.com/angular/angular-cli) versão 1.2.7.
+
+# Readme.md original do Angular CLI
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.7.
 

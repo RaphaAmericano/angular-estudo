@@ -10,10 +10,10 @@ export class DataBindingComponent implements OnInit {
   url: any = 'http://www.raphaelamericano.com.br';
   urlImage: string = 'http://lorempixel.com/400/200/nature/';
   cursoAngular: boolean = true;
-  valorAtual: string = '';
-  valorSalvo: string = '';
+  // valorAtual: string = '';
+  // valorSalvo: string = '';
 
-  isMouseOver: boolean = false;
+  //isMouseOver: boolean = false;
 
   constructor() { }
 

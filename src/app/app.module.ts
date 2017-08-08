@@ -11,17 +11,20 @@ import { MeuPrimeiroComponentComponent } from './meu-primeiro-component/meu-prim
 //Modules
 //import { MeuPrimeiroComponentModule } from './meu-primeiro-component/meu-primeiro-component.module';
 import { SegundoComponentModule  } from './segundo-component/segundo-component.module';
-import { DataBindingComponent } from './data-binding/data-binding.component';
+import { DataBindingModule  } from './data-binding/data-binding.module';
+//import { DataBindingComponent } from './data-binding/data-binding.component';
+//import { InterpolacaoUmComponent } from './data-binding/interpolacao-um/interpolacao-um.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MeuPrimeiroComponentComponent,
-    DataBindingComponent,
+    //InterpolacaoUmComponent,
    // SegundoComponentComponent
   ],
   imports: [
     BrowserModule,
+    DataBindingModule,
     SegundoComponentModule
     //MeuPrimeiroComponentModule
   ],
