@@ -2,6 +2,7 @@ import { MeuPrimeiroComponentService } from './meu-primeiro-component/meu-primei
 
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 //Components
 import { AppComponent } from './app.component';
@@ -12,6 +13,7 @@ import { MeuPrimeiroComponentComponent } from './meu-primeiro-component/meu-prim
 //import { MeuPrimeiroComponentModule } from './meu-primeiro-component/meu-primeiro-component.module';
 import { SegundoComponentModule  } from './segundo-component/segundo-component.module';
 import { DataBindingComponent } from './data-binding/data-binding.component';
+import { MeuFormModule } from './meu-form/meu-form.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
   ],
   imports: [
     BrowserModule,
-    SegundoComponentModule
+    SegundoComponentModule,
+    FormsModule,
+    MeuFormModule
     //MeuPrimeiroComponentModule
   ],
   providers: [MeuPrimeiroComponentService],
