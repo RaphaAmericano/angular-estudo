@@ -1,3 +1,35 @@
-<p>
-  diretiva-ngif works!
-</p>
+<h5>Diretivas - Listas de Cursos</h5>
+<div *ngIf="cursos.lenght > 0">
+	Lista de cursos aqui
+</div>
+<div *ngIf="cursos.length == 0">
+	Não existem cursos para serem listados
+</div>
+<div *ngIf="mostrarCursos">
+	Lista de cursos aqui
+</div>
+<div *ngIf="!mostrarCursos">
+	Não existem cursos para serem listados
+</div>
+<br>
+<button class="btn btn-primary" (click)="visualizarCursos()" >Mostrar ou esconder</button>
+<br>
+<h5>hidden como alternativa</h5>
+<div [hidden]="!mostrarCursos">
+	Lista de cursos aqui
+</div>
+<div [hidden]="mostrarCursos">
+	Não existem cursos para serem listados
+</div>
+
+<!-- Outras Sintaxes -->
+<h5>Diretivas - Removendo o * e usando template</h5>
+<div *ngIf="mostrarCursos">
+	Lista de cursos aqui
+</div>
+
+<template [ngIf]="mostrarCursos">
+	<div>Lista de cursos aqui</div>
+</template>
+
+<div template="ngIf mostrarCursos">Lista de cursos aqui</div>
